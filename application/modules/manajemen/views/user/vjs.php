@@ -138,7 +138,7 @@
                     }
                 }).done(function(data) {
                     $('input[name="'+csrfName+'"]').val(data.csrfHash);
-                    console.log(data);
+                    // console.log(data);
                     if(data.status == 'RC404') {
                         $('#formEntry').addClass('was-validated');
                         swalAlert.fire({
@@ -347,7 +347,7 @@
     //         url: site+'/getOptionOpd',
     //         type: "POST",
     //         data: {
-    //             '<?php echo $this->security->get_csrf_token_name(); ?>' : $('input[name="'+csrfName+'"]').val()
+    //             '<?php //echo $this->security->get_csrf_token_name(); ?>' : $('input[name="'+csrfName+'"]').val()
     //         },
     //         dataType: "json",
     //         beforeSend: function(){
